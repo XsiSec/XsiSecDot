@@ -1,0 +1,47 @@
+#Contact-content{
+    position: absolute;
+    top: 0; bottom: 0; left: 24%; right: 0;
+    margin: auto;
+	width: 420px;
+	height: 280px;
+    border: 1px solid #ff0000;	
+	background-color: rgb(133, 141, 255);
+	overflow: hidden; 
+}
+.textarea{
+    position:absolute;
+    top: 10%; bottom: 0; left: 0%; right: 0%;
+    margin: auto;
+    width: 380px;
+    height: 170px;
+}
+
+
+.yourName{
+    background-color: red;
+    position:absolute;
+    top: 0%; bottom: 70%; left: 0%; right: 0%;
+    margin: auto;
+    width:380px;
+    height: 20px;
+}
+.yourEmail{
+    background-color: red;
+    position:absolute;
+    top: 0%; bottom: 90%; left: 0%; right: 0%;
+    margin: auto;
+    width:380px;
+    height: 20px;
+}
+input{
+    width: 380px;
+}
+
+.mySubmit{
+    position:absolute;
+    top: 88%;
+    left: 4%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
