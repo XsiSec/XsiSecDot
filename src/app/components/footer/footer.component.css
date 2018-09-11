@@ -1,0 +1,11 @@
+.footer-content {
+    position: absolute;
+    top: 65%; bottom: 0%; left: 0; right: 0;
+    margin: auto;
+	width: 700px;
+	height: 60px;
+    border: 1px solid #66ff00;	
+	background-color: rgba(0, 0, 0, 0.473);
+	overflow: hidden; 
+	
+}
