@@ -14,7 +14,9 @@ export class NavbarComponent implements OnInit {
 
 
 	constructor() {
-this.mypath= window.location.href;
+    this.mypath= window.location.href;
+	
+	
 
 	} // make variable private so that it would be accessible through out the component
 
