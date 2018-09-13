@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { delay } from 'q';
-import { Router } from '@angular/router';
+import {UserPathModule} from '../../models/user-path/user-path.module';
 
 declare var $:any;
 declare var baffle:any;
@@ -10,18 +10,18 @@ declare var baffle:any;
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-	public href: string = "";
-        url: string = "asdf";
+	public mypath="";
 
 
-	constructor(private router : Router) {} // make variable private so that it would be accessible through out the component
+	constructor() {
+this.mypath= window.location.href;
+
+	} // make variable private so that it would be accessible through out the component
 
 	ngOnInit() {
 
-		this.href = this.router.url;
-		console.log(this.router.url);
 	
+
 
 	function FadeInTerm()
     {
@@ -31,7 +31,6 @@ export class NavbarComponent implements OnInit {
       })
 	}
 	
-
 
 
 	//UNCOMENT the real function below:

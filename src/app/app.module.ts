@@ -10,7 +10,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule }   from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { UserPathModule } from './models/user-path/user-path.module';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -33,7 +33,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    UserPathModule
     
     
 
