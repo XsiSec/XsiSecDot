@@ -12,10 +12,6 @@ import { FormsModule }   from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 
 
-
-
-
-
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '**', component:PageNotFoundComponent}
@@ -30,6 +26,7 @@ const appRoutes: Routes = [
     HomeComponent,
     PageNotFoundComponent,
     FooterComponent
+    
 
     
   ],

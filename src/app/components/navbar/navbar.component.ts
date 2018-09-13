@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { delay } from 'q';
+import { Router } from '@angular/router';
 
 declare var $:any;
 declare var baffle:any;
@@ -10,11 +11,17 @@ declare var baffle:any;
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+	public href: string = "";
+        url: string = "asdf";
 
-  ngOnInit() {
 
+	constructor(private router : Router) {} // make variable private so that it would be accessible through out the component
 
+	ngOnInit() {
+
+		this.href = this.router.url;
+		console.log(this.router.url);
+	
 
 	function FadeInTerm()
     {
@@ -24,6 +31,9 @@ export class NavbarComponent implements OnInit {
       })
 	}
 	
+
+
+
 	//UNCOMENT the real function below:
 	// 	function FadeInTerm()
     // {
@@ -108,7 +118,6 @@ export class NavbarComponent implements OnInit {
 		FadeInTerm();
 		// a timeout before baffle effect starts
 		setTimeout(myBaffle,10000);
-
 		}
 	}
 	
