@@ -16,7 +16,6 @@ import { FooterComponent } from './components/footer/footer.component';
 
 
 
-
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '**', component:PageNotFoundComponent}
@@ -30,7 +29,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     HomeComponent,
     PageNotFoundComponent,
-    FooterComponent,
+    FooterComponent
 
     
   ],
@@ -38,10 +37,16 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule
+    
+    
 
   ],
 
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+
+  
+}

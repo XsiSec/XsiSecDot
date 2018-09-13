@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Ng6SocialButtonModule, SocialServiceConfig } from "ng6-social-button";
 declare var $:any;
 @Component({
   selector: 'app-footer',
@@ -8,9 +8,14 @@ declare var $:any;
 })
 export class FooterComponent implements OnInit {
 
+
+  
+
   constructor() { }
 
   ngOnInit() {
+
+    
   
   }
 
