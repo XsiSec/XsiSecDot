@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
-
 declare var url:any;
 @NgModule({
   imports: [
@@ -12,6 +11,7 @@ declare var url:any;
 })
 export class UserPathModule {
  router:any;
+ 
 
   constructor(router: Router) { 
     router.events.subscribe((url) => console.log(url));
@@ -19,7 +19,9 @@ export class UserPathModule {
  
 }
   ngOnInit() {
-    this.router.subscribe((url) => console.log(url));
+  //this.router.subscribe((url) => console.log(url));
+
+
 
   }
 }
