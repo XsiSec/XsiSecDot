@@ -1,21 +1,20 @@
 <form (ngSubmit)="processForm()">
-<div id="Contact-content">
-  <div class="yourName">
-    <input type="text" name="name" class="input" placeholder="Your Name" [ngModel]="name">
+  <div id="Contact-content">
+    <div class="yourName">
+      <input type="text" name="name" class="input" placeholder="Your Name" [ngModel]="name">
+    </div>
+  
+    <!-- email -->
+    <div class="yourEmail">
+      <input type="email" name="email" class="input" placeholder="Your Email" [ngModel]="email">
+    </div>
+  
+    <!-- message -->
+    <div class="field">
+      <textarea class="textarea" name="message" placeholder="What's on your mind?" [ngModel]="message">
+      </textarea>
+    </div>
+  
+    <button type="submit" class="mySubmit">Submit</button>
   </div>
-
-  <!-- email -->
-  <div class="yourEmail">
-    <input type="email" name="email" class="input" placeholder="Your Email" [ngModel]="email">
-  </div>
-
-  <!-- message -->
-  <div class="field">
-    <textarea class="textarea" name="message" placeholder="What's on your mind?" [ngModel]="message">
-    </textarea>
-  </div>
-
-  <button type="submit" class="mySubmit">Submit</button>
-</div>
-</form>
-
+  </form>
