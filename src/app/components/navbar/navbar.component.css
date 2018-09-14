@@ -13,10 +13,10 @@
 .UserData{
 	color: white;
 	position: absolute;
-    top: 225px; bottom: 0%; left:0%; right: 640px;
+    top: 230px; bottom: 0%; left:0%; right: 620px;
     margin: auto;
-	width: 130px;
-	height:80px;
+	width: 145px;
+	height:75px;
 	background-color:rgba(255, 255, 255, 0.096);
 	border: 1px solid #66ff00;
 	font-size: 13px;
@@ -50,7 +50,7 @@ ul#sliding-navigation
 {
 	list-style: none;
 	margin-left: 2%;
-	margin-top: 15%;
+	margin-top: 55px;
 	padding: 0;
 	text-align: left;
 }
@@ -58,11 +58,11 @@ ul#sliding-navigation
 ul#sliding-navigation li.sliding-element a
 {
 	display: block;
-	width: 130px;
-	height: 45px;
-	margin-top:-20px;
-	margin-bottom: 40px;
+	width: 145px;
+	height: 40px;
+	margin-top: 25px;
 	text-align: left;
+	margin-bottom: 20px;
 	font-family: 'courier';
 	font-size: 22px;
 }

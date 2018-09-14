@@ -1,4 +1,4 @@
-.home-content{
+.resume-content{
     position: absolute;
     top: 40px; bottom: 0; left: 160px; right: 0;
     margin: auto;
@@ -8,5 +8,5 @@
 	background-color: rgb(73, 73, 73);
     overflow: hidden; 
     font-family: 'courier';
-    font-size: 14px;  
+    font-size: 14px;   
 }
