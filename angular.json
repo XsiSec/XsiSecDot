@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "XsiSecDotCom": {
+    "ng-blog": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/XsiSecDotCom",
+            "outputPath": "dist/ng-blog",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,8 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-             
+              "src/theme.scss"
             ],
             "scripts": []
           },
@@ -52,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "XsiSecDotCom:build"
+            "browserTarget": "ng-blog:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "XsiSecDotCom:build:production"
+              "browserTarget": "ng-blog:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "XsiSecDotCom:build"
+            "browserTarget": "ng-blog:build"
           }
         },
         "test": {
@@ -97,7 +96,7 @@
         }
       }
     },
-    "XsiSecDotCom-e2e": {
+    "ng-blog-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -105,11 +104,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "XsiSecDotCom:serve"
+            "devServerTarget": "ng-blog:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "XsiSecDotCom:serve:production"
+              "devServerTarget": "ng-blog:serve:production"
             }
           }
         },
@@ -125,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "XsiSecDotCom"
+  "defaultProject": "ng-blog"
 }

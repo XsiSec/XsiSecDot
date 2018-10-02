@@ -1,0 +1,175 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+span:focus {
+  outline: none;
+  border: 0;
+}
+
+span {
+  cursor: pointer;
+}
+
+.mainMenu {
+  display: none;
+}
+
+#navigation-block {
+  position: absolute;
+  top: 0%;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 480px;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+  overflow: hidden;
+
+
+}
+
+#hide {
+  position: absolute;
+  top: 30px;
+  left: -190px;
+
+}
+
+ul#sliding-navigation {
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 130px;
+  padding: 0;
+  text-align: left;
+}
+
+ul#sliding-navigation li.sliding-element a {
+  display: block;
+  width: 110px;
+  height: 22px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: 'courier';
+  font-size: 22px;
+}
+
+
+
+ul#sliding-navigation li.sliding-element a {
+  color: rgb(123, 255, 0);
+  border: 1px solid #66ff00;
+  text-decoration: none;
+  padding: 4px;
+  text-align: left;
+}
+
+#menuFrame {
+
+  border: 1px solid #66ff00;
+}
+
+ul#sliding-navigation li.sliding-element a:hover {
+  color: #ffff66;
+}
+
+.active {
+  display: block;
+  width: fit-content;
+  padding: 0px 0px;
+  margin: 0;
+  position: relative;
+  background-color: #3cff0031;
+}
+
+
+.UrlPath {
+  color: white;
+  position: absolute;
+  top: 0px;
+  bottom: 330px;
+  left: 0px;
+  right: 40px;
+  margin: auto;
+  width: 340px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.096);
+  border: 1px solid #66ff00;
+}
+
+.CurrentUserDetails {
+  color: white;
+  position: absolute;
+  top: 225px;
+  bottom: 0%;
+  left: 0%;
+  right: 640px;
+  margin: auto;
+  width: 130px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.096);
+  border: 1px solid #66ff00;
+  font-size: 13px;
+
+}
+
+.userAdmin {
+  color: white;
+  position: absolute;
+  top: 0px;
+  bottom: 330px;
+  left: 460px;
+  right: 0px;
+  margin: auto;
+  width: fit-content;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.096);
+  border: 1px solid #66ff00;
+  font-size: 13px;
+
+}
+
+
+.btnDashBoard {
+  border: none;
+  color: white;
+  top: 0px;
+  bottom: 330px;
+  left: 500px;
+  right: 0px;
+  margin: auto;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.096);
+}
+
+.btnLogin {
+  border: none;
+  color: white;
+  padding: 0px 0px;
+
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.096);
+}
+
+.btnLogout {
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.096);
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: yellow;
+}
+
+#showLogin {
+  color: black;
+}

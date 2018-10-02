@@ -1,0 +1,56 @@
+section {
+    position: absolute;
+    top:150px; bottom: 0px; left:32%; right: 0;
+    /*
+    display: grid;
+     grid-template-columns: repeat(minmax(300px,1fr));
+      grid-template-rows: auto;
+       */
+  
+    width: 570px;
+    height: fit-content;
+  }
+  mat-card {
+    margin: 5% 5% 5% 5%;
+    max-width: 90%;
+    background-color: rgb(44, 44, 44);
+  }
+  img{
+      width: 100%;
+  }
+  
+  .postlist-content {
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    left: 180px;
+    right: 0;
+    margin: auto;
+    width: 570px;
+    height: 350px;
+    border: 1px solid #66ff00;
+    background-color: rgba(0, 0, 0, 0.473);
+    overflow: hidden;
+    font-family: 'courier';
+    font-size: 14px;
+    overflow: scroll;
+    
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #66ff0063;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #66ff0063;
+}

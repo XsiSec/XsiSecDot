@@ -1,0 +1,76 @@
+<div class="mainMenu">
+  <div id="navigation-block">
+    <div class="UrlPath">
+      P: 'The href is: {{mypath}}'
+    </div>
+    <ul id="sliding-navigation">
+      <li class="sliding-element" routerLinkActive="active">
+        <a routerLink="home" class="baffle">Home</a>
+      </li>
+      <li class="sliding-element" routerLinkActive="active">
+        <a routerLink="blog" class="baffle">blog</a>
+      </li>
+      <li li class="sliding-element" routerLinkActive="active">
+        <a routerLink="github" class="baffle">GitHub</a>
+      </li>
+      <li class="sliding-element" routerLinkActive="active">
+        <a routerLink="services" class="baffle">Services</a>
+      </li>
+      <li class="sliding-element" routerLinkActive="active">
+        <a routerLink="contact" class="baffle">Contact</a>
+      </li>
+      <li class="userAdmin" routerLinkActive="active">
+        <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+            <button class="btnDashBoard" routerLink="/dashboard">write Post</button>
+            <button class="btnLogout"(click)="auth.logout()">Logout</button>
+          </div>
+          <ng-template #showLogin>
+              <button class="btnLogin" (click)="auth.login()">Login</button>
+            </ng-template>
+      <!-- <a routerLink="auth.login()" class="baffle">Login</a> -->
+    </li>
+    </ul>
+    
+  </div>
+  <div class="CurrentUserDetails">
+    IP:<br>
+    Location:<br>
+    City:<br>
+    Country:
+  </div>
+</div>
+
+
+<!--  <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+            <button mat-raised-button color="accent" routerLink="/dashboard">write Post</button>
+            <button (click)="auth.logout()" mat-button>Logout</button>
+          </div>
+          <ng-template #showLogin>
+              <button (click)="auth.login()" mat-button>Login with Google</button>
+            </ng-template>
+          -->
+<!--
+       <li class="sliding-element" routerLinkActive="active">
+        <a routerLink="/blog" class="baffle">blog</a>
+        <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+            <button mat-raised-button color="accent" routerLink="/dashboard">write Post</button>
+            <button (click)="auth.logout()" mat-button>Logout</button>
+          </div>
+          <ng-template #showLogin>
+              <button (click)="auth.login()" mat-button>Login with Google</button>
+            </ng-template>
+      </li>
+-->
+<!-- <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span routerLink="/blog">blog</span>
+    <span class="spacer"></span>
+    <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+      <button mat-raised-button color="accent" routerLink="/dashboard">write Post</button>
+      <button (click)="auth.logout()" mat-button>Logout</button>
+    </div>
+    <ng-template #showLogin>
+      <button (click)="auth.login()" mat-button>Login with Google</button>
+    </ng-template>
+  </mat-toolbar-row>
+</mat-toolbar> -->

@@ -1,50 +1,49 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire//storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
 import { AppComponent } from './app.component';
-import { BackgroundComponent } from './components/background/background.component';
-import { AnimationComponent } from './components/animation/animation.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FormsModule }   from '@angular/forms';
-import { FooterComponent } from './components/footer/footer.component';
-import { UserPathModule } from './models/user-path/user-path.module';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+import { PostsModule } from './posts/posts.module';
+import { HomeComponent } from './shared/home/home.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { GithubComponent } from './shared/github/github.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
-const appRoutes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: '**', component:PageNotFoundComponent}
+const routes: Routes = [
+  { path: 'home', component: HomeComponent},
+  { path: 'github', component: GithubComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: '**', component: PageNotFoundComponent},
+  { path: '', redirectTo: 'blog', pathMatch: 'full' },
+  { path: 'blog/posts/', loadChildren: './posts/posts.module#PostsModule' },
+
 ];
-
 @NgModule({
   declarations: [
-    AppComponent,
-    BackgroundComponent,
-    AnimationComponent,
-    NavbarComponent,
-    HomeComponent,
-    PageNotFoundComponent,
-    FooterComponent
-    
-
-    
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
-    FormsModule,
-    UserPathModule
-    
-    
-
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    CoreModule,
+    SharedModule,
+    PostsModule
   ],
-
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-
-
-  
-}
+export class AppModule { }
