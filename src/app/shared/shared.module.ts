@@ -10,13 +10,14 @@ import { FooterComponent } from './footer/footer.component';
 import { GithubComponent } from './github/github.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, MaterialModule, RouterModule],
   exports: [CommonModule, FormsModule, MaterialModule, RouterModule,
     NavbarComponent, FooterComponent, BackgroundComponent, HomeComponent, GithubComponent,
-    PageNotFoundComponent, ContactComponent ], // export all components
+    PageNotFoundComponent, ContactComponent, HeaderComponent], // export all components
   declarations: [NavbarComponent, FooterComponent, HomeComponent, BackgroundComponent, GithubComponent,
-    PageNotFoundComponent, ContactComponent]
+    PageNotFoundComponent, ContactComponent, HeaderComponent]
 })
 export class SharedModule { }

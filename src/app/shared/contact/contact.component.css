@@ -1,47 +1,65 @@
-#Contact-content{
-    position: absolute;
-    top: 0; bottom: 60px; left: 180px; right: 0;
-    margin: auto;
-	width: 570px;
-	height: 340px;
-    border: 1px solid #66ff00;	
-	background-color: rgba(0, 0, 0, 0.473);
-	overflow: hidden; 
+#Contact-content {
+  position: fixed;
+  top: 30px;
+  bottom: 0px;
+  left: 150px;
+  right: 0;
+  margin: auto;
+  width: 620px;
+  height: 380px;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+  overflow: hidden;
+  font-family: 'courier';
+  font-size: 14px;
+  overflow: hidden;
 }
-.textarea{
-    position:absolute;
-    top: 20px; bottom: 0; left: 0%; right: 0%;
-    margin: auto;
-    width: 545px;
-    height: 230px;
+
+.textarea {
+  position: fixed;
+  top: 80px;
+  bottom: 0px;
+  left: 150px;
+  right: 0;
+  margin: auto;
+  width: 600px;
+  height: 250px;
 }
 
 
-.yourName{
-    background-color: rgba(0, 0, 0, 0.473);
-    position:absolute;
-    top: 0%; bottom: 300px; left: 0%; right: 0%;
-    margin: auto;
-    width:550px;
-    height: 20px;
-}
-.yourEmail{
-   background-color: rgba(0, 0, 0, 0.473);
-    position:absolute;
-    top: 0%; bottom: 250px; left: 0%; right: 0%;
-    margin: auto;
-    width:550px;
-    height: 20px;
-}
-input{
-    width: 550px;
+.yourName {
+  background-color: rgba(0, 0, 0, 0.473);
+  position: fixed;
+  top: 0px;
+  bottom: 300px;
+  left: 150px;
+  right: 0px;
+  margin: auto;
+  width: 600px;
+  height: 20px;
 }
 
-.mySubmit{
-    position:absolute;
-    top: 310px;
-    left: 10px;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
+.yourEmail {
+  background-color: rgba(0, 0, 0, 0.473);
+  position: absolute;
+  top: 0%;
+  bottom: 260px;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  width: 600px;
+  height: 20px;
+}
+
+input {
+  width: 600px;
+}
+
+.mySubmit {
+  position: absolute;
+  top: 350px;
+  left: 10px;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }

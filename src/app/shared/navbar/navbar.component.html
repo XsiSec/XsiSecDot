@@ -1,7 +1,7 @@
 <div class="mainMenu">
   <div id="navigation-block">
     <div class="UrlPath">
-      P: 'The href is: {{mypath}}'
+     >>: {{mypath}}'
     </div>
     <ul id="sliding-navigation">
       <li class="sliding-element" routerLinkActive="active">
@@ -30,15 +30,17 @@
       <!-- <a routerLink="auth.login()" class="baffle">Login</a> -->
     </li>
     </ul>
+
+    <div class="CurrentUserDetails">
+        IP:<br>
+        Location:<br>
+        City:<br>
+        Country:
+      </div>
+    </div>
     
   </div>
-  <div class="CurrentUserDetails">
-    IP:<br>
-    Location:<br>
-    City:<br>
-    Country:
-  </div>
-</div>
+
 
 
 <!--  <div *ngIf="auth.afAuth.authState | async as user; else showLogin">

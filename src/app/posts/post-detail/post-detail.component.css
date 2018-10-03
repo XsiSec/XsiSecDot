@@ -1,15 +1,23 @@
 mat-card {
-    margin: 100px auto;
-    max-width: 700px;
-    border: 1px solid #66ff00;
-    background-color: rgb(116, 116, 116);
-  }
-  mat-form-field {
-    width: 100%;
-  }
-  mat-form-field{
-      width: 100%;
-  }
+  position: fixed;
+  top: 30px;
+  bottom: 0px;
+  left: 150px;
+  right: 0px;
+  height: 335px;
+  margin: auto;
+  width: 570px;
+  border: 1px solid #66ff00;
+  background-color: rgb(116, 116, 116);
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
 
 
 .btnSave {
@@ -24,6 +32,7 @@ mat-card {
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.096);
 }
+
 .btnSave:hover {
   background-color: #3e8e41;
   color: yellow;

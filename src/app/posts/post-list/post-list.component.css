@@ -11,23 +11,24 @@ section {
     height: fit-content;
   }
   mat-card {
-    margin: 5% 5% 5% 5%;
-    max-width: 90%;
+    margin: 0% 0% 0% 0%;
+    max-width: 100%;
     background-color: rgb(44, 44, 44);
+    
   }
   img{
       width: 100%;
   }
   
   .postlist-content {
-    position: absolute;
-    top: 0;
-    bottom: 40px;
-    left: 180px;
+    position: fixed;
+    top: 30px;
+    bottom: 0px;
+    left: 150px;
     right: 0;
     margin: auto;
-    width: 570px;
-    height: 350px;
+    width: 620px;
+    height: 380px;
     border: 1px solid #66ff00;
     background-color: rgba(0, 0, 0, 0.473);
     overflow: hidden;

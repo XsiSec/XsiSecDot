@@ -1,12 +1,15 @@
 .pageNotFound-content{
-    position: absolute;
-    top: 0; bottom: 40px; left: 180px; right: 0;
+    position: fixed;
+    top: 30px;
+    bottom: 0px;
+    left: 150px;
+    right: 0;
     margin: auto;
-	width: 570px;
-	height: 350px;
-    border: 1px solid #66ff00;	
-	background-color: rgba(0, 0, 0, 0.473);
-    overflow: hidden; 
+    width: 620px;
+    height: 380px;
+    border: 1px solid #66ff00;
+    background-color: rgba(0, 0, 0, 0.473);
+    overflow: hidden;
     font-family: 'courier';
-    font-size: 14px;  
+    font-size: 14px;
 }
