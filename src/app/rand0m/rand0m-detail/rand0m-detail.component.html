@@ -1,0 +1,39 @@
+<ng-container *ngIf="rand0m">
+    <div [hidden]="!editing">
+      <mat-card>
+        <h2>Update Post</h2>
+          <mat-form-field>
+            <input matInput placeholder="Post title" [(ngModel)]="rand0m.title" name="title">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <textarea matInput placeholder="Post content" [(ngModel)]="rand0m.content" name="content" rows="10"></textarea>
+          </mat-form-field>
+          <br>
+          <button class="btnSave" (click)="updatePost()">Save</button>
+          <button class="btnCancel" (click)="editing=false" *ngIf="editing">Cancel</button>
+    </mat-card>
+    </div>
+  
+    <div [hidden]="editing">
+      <mat-card>
+        <img mat-card-image src="{{rand0m.image}}" alt="{{rand0m.title}}">
+        <h2>{{rand0m.title}}</h2>
+        <p>
+          <small>Posted by {{rand0m.author}} &bull; on {{rand0m.published.toDate() | date:"fullDate"}}</small>
+        </p>
+        <mat-card-content>
+          <p>{{ rand0m.content }}</p>
+        </mat-card-content>
+        <mat-card-actions align="end" *ngIf="auth.currentUserId === rand0m.authorId">
+          <button mat-icon-button (click)="editing=true">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="delete(rand0m.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </ng-container>
+  

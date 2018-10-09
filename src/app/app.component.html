@@ -1,7 +1,36 @@
-<body>
-<app-header></app-header>
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<footer><app-footer></app-footer></footer>
 <app-background></app-background>
-</body>
+<div class="support-grid"></div>
+<section class="grid-1">
+  <div class="header">
+    <app-header></app-header> <!-- 1 -->
+  </div>
+  <div class="userAdmin">
+    <span class="urlPath">Url:</span><p>
+    <span class="userAdmin">
+        <div class="userAdmin" routerLinkActive="active">
+            <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+              <button class="btnadmin" routerLink="/dashboard">write Post</button>
+              <button class="btnadmin" routerLink="rand0mdb">write r3 Post</button>
+              <button class="btnadmin" (click)="auth.logout()">Logout</button>
+            </div>
+            <ng-template #showLogin>
+              <button class="btnadmin" (click)="auth.login()">Login</button>
+            </ng-template>
+          </div>
+    </span>
+    </div>
+
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="routeroutlet">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <div class="item-4">
+    4
+  </div> -->
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+
+</section>

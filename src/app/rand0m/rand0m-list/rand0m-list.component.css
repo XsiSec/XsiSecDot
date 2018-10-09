@@ -1,0 +1,46 @@
+
+  mat-card {
+    margin: 0% 0% 0% 0%;
+    max-width: 100%;
+    /* background-color: rgb(44, 44, 44);  */
+    
+    border: 1px solid #66ff00;
+    background-color: rgba(0, 0, 0, 0);
+    transition: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    
+  }
+  img{
+      width: 100%;
+  }
+  
+  .rand0mlist-content {
+    /* display: grid;
+    grid-template-columns: repeat(minmax(300px, 1fr));
+    grid-template-rows: 1;  */
+    height: 350px;
+    border: 1px solid #66ff00;
+    /* background-color: rgba(0, 0, 0, 0.473); */
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'courier';
+    font-size: 14px;    
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #66ff0063;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #66ff0063;
+}

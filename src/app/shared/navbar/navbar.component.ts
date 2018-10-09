@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../core/auth.service';
+// import { AuthService } from '../../core/auth.service';
 import { timer } from 'rxjs';
 declare var $: any;
 declare var baffle: any;
@@ -20,9 +20,9 @@ export class NavbarComponent implements OnInit {
   public url = location.href;
 
 
-  constructor(public auth: AuthService) {
-    this.mypath = window.location.href;
-  }
+  // constructor(public auth: AuthService) {
+  //   this.mypath = window.location.href;
+  // }
 
   ngOnInit() {
     this.GetURL();

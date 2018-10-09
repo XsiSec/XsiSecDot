@@ -1,15 +1,30 @@
-.home-content {
-  position: fixed;
-  top: 30px;
-  bottom: 0px;
-  left: 150px;
+
+/* .home-content {
+  position: relative;
+  top: -250px;
+  bottom: 20px;
+  left: 75px;
   right: 0;
   margin: auto;
   width: 620px;
   height: 380px;
   border: 1px solid #66ff00;
   background-color: rgba(0, 0, 0, 0.473);
-  overflow: hidden;
   font-family: 'courier';
   font-size: 14px;
-}
+  color:white;
+  line-height: 16px;
+} */
+
+
+
+
+/* 
+position: relative;
+  top: 160px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 480px; */

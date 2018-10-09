@@ -1,15 +1,4 @@
 .github-content {
-  position: fixed;
-  top: 30px;
-  bottom: 0px;
-  left: 150px;
-  right: 0;
-  margin: auto;
-  width: 620px;
-  height: 380px;
-  border: 1px solid #66ff00;
-  background-color: rgba(0, 0, 0, 0.473);
-  overflow: hidden;
   font-family: 'courier';
   font-size: 14px;
 }

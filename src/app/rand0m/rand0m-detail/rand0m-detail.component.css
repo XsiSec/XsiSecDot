@@ -1,7 +1,8 @@
 mat-card {
   
-  border: 1px solid #66ff00;
-  background-color: rgb(116, 116, 116);
+  background-color: rgba(116, 116, 116, 0);
+  transition: none !important;
+  box-shadow: none !important;
 }
 
 mat-form-field {
@@ -15,7 +16,6 @@ mat-form-field {
 
 .btnSave {
   border: none;
-  color: white;
   top: 0px;
   bottom: 330px;
   left: 500px;
@@ -23,7 +23,7 @@ mat-form-field {
   margin: auto;
   font-size: 16px;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.096);
+  /* background-color: rgba(255, 255, 255, 0.096); */
 }
 
 .btnSave:hover {
@@ -33,7 +33,6 @@ mat-form-field {
 
 .btnCancel {
   border: none;
-  color: white;
   top: 0px;
   bottom: 330px;
   left: 500px;
@@ -41,7 +40,7 @@ mat-form-field {
   margin: auto;
   font-size: 16px;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.096);
+  /* background-color: rgba(255, 255, 255, 0.096); */
 }
 
 .btnCancel:hover {

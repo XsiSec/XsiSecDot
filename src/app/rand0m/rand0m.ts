@@ -1,4 +1,4 @@
-export class Post {
+export class Rand0m {
     id?: string;
     title: string;
     author: string;

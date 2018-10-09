@@ -1,15 +1,10 @@
-section {
-    position: absolute;
-    top:150px; bottom: 0px; left:32%; right: 0;
-    /*
-    display: grid;
-     grid-template-columns: repeat(minmax(300px,1fr));
-      grid-template-rows: auto;
-       */
-  
-    width: 570px;
-    height: fit-content;
-  }
+.postlist-content {
+/* 
+  display: grid;
+  grid-template-columns: repeat(minmax(300px, 1fr));
+  grid-template-rows: 1; */
+  height: 350px;
+}
   mat-card {
     margin: 0% 0% 0% 0%;
     max-width: 100%;
@@ -21,17 +16,9 @@ section {
   }
   
   .postlist-content {
-    position: fixed;
-    top: 30px;
-    bottom: 0px;
-    left: 150px;
-    right: 0;
-    margin: auto;
-    width: 620px;
-    height: 380px;
+    
     border: 1px solid #66ff00;
     background-color: rgba(0, 0, 0, 0.473);
-    overflow: hidden;
     font-family: 'courier';
     font-size: 14px;
     overflow: scroll;

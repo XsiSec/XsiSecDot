@@ -1,25 +1,111 @@
-html{ height:100%; }
-body{ min-height:100%; padding:0; margin:0; position:relative; }
-
-body::after{ content:''; display:block; height:100px; }
-
-footer{ 
-  position:fixed; 
-  bottom:0; 
-  width:100%; 
-  height:100px; 
+header {
+  background-color: blue;
 }
 
-header{ 
-  position:fixed; 
-  width:700px; 
-  height:100; 
+nav {
+  background-color: green;
+}
+
+main {
+  background-color: red;
+}
+
+footer {
+  background-color: yellow;
+}
+
+sidebar {
+  background-color: gray;
 }
 
 
-/* FOR DEMO ONLY */
+body {
+  background: #f5f7f8;
+}
+
+.grid-1 {
+  padding-top: 5%;
+  display: grid;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-auto-flow: row dense;
+  grid-row-gap: 10px;
+  grid-column-gap: 0px;
+
+}
+
+/* items */
+
+.grid-1 div {
+  color: white;
+}
+
+/* specific item styles */
+
+.header {
+  /* background: #b03532; */
+  grid-column: span 5;
+  grid-row: span 1;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.navbar {
+  /* background: #33a8a5; */
+  grid-column: span 1;
+  grid-row: span 1;
+  width: 140px;
+}
+
+.userAdmin {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+span.urlPath {
+  display: block;
+  float: left;
+  width: 395px;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+span.userAdmin {
+  display: block;
+  float: left;
+  width: 300px;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.routeroutlet {
+  /* background: #4464a1; */
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+  grid-column: span 1;
+  grid-row: span 1;
+  width: 555px;
+  height: 350px;
+}
 
 
-content-body{ width:40%; margin:0 auto}
-header{ background:#C7DD8B; height:50px; }
-/* footer{ background:#DB8A8A; } */
+.footer {
+  /* background: #30997a; */
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.btnadmin{
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btnadmin:hover {
+  color: #ffff66;
+}

@@ -1,0 +1,35 @@
+<!-- <section>
+  <mat-card *ngFor="let post of posts | async">
+    <mat-card-content routerLink="{{post.id}}">
+      <img mat-card-image src="{{post.image}}" alt="{{post.title}}">
+      <h2>{{post.title}}</h2>
+      <p>
+        <small>Posted by {{post.author}} &bull; on {{post.published.toDate() | date:"fullDate"}}</small>
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end" *ngIf="auth.currentUserId === post.authorId">
+      <button mat-icon-button (click)="delete(post.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section> -->
+
+<div class="rand0mlist-content">
+
+  <mat-card *ngFor="let rand0m of rand0ms | async">
+    <mat-card-content routerLink="{{rand0m.id}}">
+      <img mat-card-image src="{{rand0m.image}}" alt="{{rand0m.title}}">
+      <h2>{{rand0m.title}}</h2>
+      <p>
+        <small>Posted by {{rand0m.author}} &bull; on {{rand0m.published.toDate() | date:"fullDate"}}</small>
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end" *ngIf="auth.currentUserId === rand0m.authorId">
+      <button mat-icon-button (click)="delete(rand0m.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+     
+   </div>

@@ -5,11 +5,13 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostService } from './post.service';
 import { SharedModule } from '../shared/shared.module';
-
 const routes: Routes = [
   { path: 'blog', component: PostListComponent },
   { path: 'blog/:id', component: PostDetailComponent },
-  { path: 'dashboard', component: PostDashboardComponent }
+  { path: 'dashboard', component: PostDashboardComponent },
+
+
+
 ];
 @NgModule({
   imports: [SharedModule, RouterModule.forChild(routes)],
